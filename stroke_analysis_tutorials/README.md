@@ -64,4 +64,4 @@ Then run:
 
 `sh stroke_exp.sh`
 
-You can check stroke_exp.out for the running result.
+This will request memory You can check stroke_exp.out for the running result.
