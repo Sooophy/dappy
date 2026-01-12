@@ -1,3 +1,6 @@
+# mac files
+*.DS_Store
+
 # Windows thumbnail cache files
 Thumbs.db
 ehthumbs.db
