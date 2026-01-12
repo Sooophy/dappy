@@ -20,13 +20,13 @@ $RECYCLE.BIN/
 *.msi
 *.msm
 *.msp
-*.csv
+# *.csv
 *.txt
 *.mat
 
 *.h5
 *.mp4
-*.yaml
+# *.yaml
 *.png
 *.pyc
 *./src/neuroposelib/__pycache__/
