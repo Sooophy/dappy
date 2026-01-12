@@ -67,3 +67,7 @@ Prepare your `stroke_exp.yaml`. See comments inside the config file for more inf
 `sh stroke_exp.sh`
 
 This will request memory and run `stroke_exp.py`. Remember to change the config path in `stroke_exp.py`. You can check `stroke_exp.out` for the running result.
+
+## Authors
+- **Sophie Shi** - sophie.shi@duke.edu
+- **Joshua Wu** - joshua.wu@duke.edu
