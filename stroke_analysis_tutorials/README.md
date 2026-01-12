@@ -5,7 +5,7 @@ Please refer to the [DANNCE prediction protocol](https://github.com/Sooophy/dann
 ## Install your environment
 Please install your environment following the README [here](https://github.com/Sooophy/neuroposelib/blob/stroke_analysis_sophie/README.md) written by Josh.
 
-## Folder structure and files
+## Folder structure
 Now you already have a folder structure like this for the DANNCE prediction.
 ```
 seguralab
@@ -45,23 +45,25 @@ seguralab
             preprocess_for_tsne.py
 ```
 
-We have provided an example metadata.csv for your reference.
-Note that the videoID need to be unique for each row. You can leave the ClusterDirectory blank or simply not have this column if you follow the same naming rules. We will fill with the preprocessed data path later. Check `preprocess_for_tsne.py` comments for more information.
+## Prepare your metadata file <a id="metadata"></a>
+We have provided an example `metadata.csv` for your reference. You will need your own file that contains your experiment information.
+
+Note that the videoID need to be unique for each row. You can leave the `ClusterDirectory` blank or simply not have this column, since this will be generated automatically after running the follwoing script (if you follow the naming rules). You can add more columns if you have more categories to compare. 
 
 ## Data Processing
-First activate your environment, run:
+First, activate your environment, run:
 
  `conda activate neuroposelib`
 
-For data preprocessing, run:
+You should have your `metadata.csv` ready following the instruction described in the [above section](#metadata).
+
+Then, change path in the script and run:
 
 `python preprocess_for_tsne.py`. 
 
-Remember to modify the path in the script.
-Check your metadata, ensure you have the ClusterDirectory correct after running the script.
 
-Then run:
+Prepare your `stroke_exp.yaml`. See comments inside the config file for more information of each parameters. When you have the parameters,run:
 
 `sh stroke_exp.sh`
 
-This will request memory You can check stroke_exp.out for the running result.
+This will request memory and run `stroke_exp.py`. Remember to change the config path in `stroke_exp.py`. You can check `stroke_exp.out` for the running result.
